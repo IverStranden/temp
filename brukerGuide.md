@@ -7,6 +7,8 @@
   <p>
     Det skal være mulig å navigere mellom appene uten å måtte bytte tab / bruke megamenyen, med unntak av når quizen pågår.
   </p>
+
+  <hr>
   
   <table>
     <tr>
