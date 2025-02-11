@@ -383,7 +383,44 @@ Man tildeler roller til brukere som gir tilgang til spesifikke moduler, apper og
 <summary>
   <h2>Grensesnittbeskrivelse</h2>
 </summary>
-    - Brukerveiledning
+  
+   - Beskrivelse på hvordan appen brukes: [Brukerveiledning](https://github.com/IverStranden/temp/blob/main/brukerGuide.md)
+     
+### Quiz-systemet består av tre apper:
+  -  Quiz App – Brukes til å gjennomføre quizer.
+  -  Quiz Overview – Hovedsiden for oversikt over tilgjengelige quizer.
+  -  Quiz Creator – Brukes til å redigere quizer.
+    
+### Navigasjon
+  -  Brukeren har alltid tilgang til å gå tilbake til Quiz Overview, med unntak av når en quiz pågår i Quiz Appen.
+    
+### Quiz-funksjonalitet
+  -  Alle spørsmål og svaralternativer hentes fra SQL.
+  -  Spørsmål og svar er lagret i forskjellige tabeller.
+  -  For å lage nye quizzer brukes en modal i Quiz Overview.
+  -  For redigering av eksisterende quizer bruker man Quiz Creator.
+
+### Spørsmål og svar
+  -  En quiz kan inneholde et ubegrenset antall spørsmål.
+  -  Man kan ha flere riktige svar.
+  -  Brukeren kan laste opp bilder til både quizzen og per spørsmål.
+
+### Tilgjengelighet (WCAG 2.1)
+  -  Støtte for "High Contrast Mode", som oppfyller minimumskravet på 4.5:1 (WCAG 2.1).
+  -  Brukeren kan enkelt aktivere/deaktivere det i quiz creatoren.
+  
+### Datainnsamling og brukerinteraksjon
+  -  Når en quiz starter, genereres en unik Session ID.
+  -  Hver gang de svarer lagres følgende informasjon:
+  -  Valgt svar
+  -  Session ID
+  -  Tid
+  -  Svar utgidd
+
+### Teknologi
+  -  Frontend: Vue.js (script setup), med Bootstrap og litt custom CSS
+  -  Backend: SQL
+  
 </details>
 
 <details open>
@@ -391,13 +428,9 @@ Man tildeler roller til brukere som gir tilgang til spesifikke moduler, apper og
   <h2>Hindringer under utviklingen</h2>
 </summary>
   
-  - Vue.js
-  - Appframe (CTP)
-  - Bootstrap
-  - Github
-  - DrawSQL
-  - Figma
-
+  -  Støtte for filopplastning ble litt vanskelig, ville at bilder skulle bli automatisk croppa på upload, og komponenten som core har lagd har ingen event på når man cropper ett bilde, så noen ganger oppdateres det ikke visuelt etter man endrer bilde.
+  -  I quiz appen ble det litt for mye custom css
+    
 </details>
 
 <details open>
@@ -405,11 +438,6 @@ Man tildeler roller til brukere som gir tilgang til spesifikke moduler, apper og
   <h2>Avvik fra plan</h2>
 </summary>
   
-  - Vue.js
-  - Appframe (CTP)
-  - Bootstrap
-  - Github
-  - DrawSQL
-  - Figma
+  -  Ville ha flere svaralternativer og har lagd støtte for det, men fikk ikke tid til å gjøre det ferdig.
 
 </details>
