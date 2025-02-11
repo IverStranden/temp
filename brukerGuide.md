@@ -2,6 +2,12 @@
   <summary>
     <h2>Quiz Overview</h2>
   </summary>
+  
+  #### Litt div
+  <p>
+    Det skal være mulig å navigere mellom appene uten å måtte bytte tab / bruke megamenyen, med unntak av når quizen pågår.
+  </p>
+  
   <table>
     <tr>
       <td> Quiz Overview gir brukeren mulighet til å navigere, redigere og slette tilgjengelige quizer. </td>
