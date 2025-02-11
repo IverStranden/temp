@@ -70,6 +70,10 @@
       <th><img src="https://github.com/user-attachments/assets/34fd143b-7b19-4ec2-984e-e864c8f7b6e2" width="300"></th> 
     </tr>
     <tr>
+      <td>Man får feedback om man er tom for tid.</td>
+      <th><img src="https://github.com/user-attachments/assets/027c65a7-527a-4d69-a7a3-3d1ec6e53f26" width="300"></th> 
+    </tr>
+    <tr>
       <td>Når man fullfører quizen ser man resultat, om man har bestått (så lenge en grense er satt), og man har mulighet til å enten gjenstarte quizen eller gå tilbake til overview.</td>
       <th><img src="https://github.com/user-attachments/assets/571d3957-e3fa-4a08-9397-7474165cef30" width="300"></th> 
     </tr>
